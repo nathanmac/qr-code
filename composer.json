@@ -1,0 +1,21 @@
+{
+    "name": "nathanmac/qr-code",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Macnamara",
+            "email": "hola@nathanmac.com"
+        }
+    ],
+    "require": {
+        "endroid/qrcode": "^1.5",
+        "illuminate/routing": "^5.1"
+    },
+    "autoload": {
+       "psr-4": {
+           "Nathanmac\\QRCode": "src/"
+       }
+   },
+   "minimum-stability": "stable"
+}
