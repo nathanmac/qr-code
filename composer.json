@@ -14,7 +14,7 @@
     },
     "autoload": {
        "psr-4": {
-           "Nathanmac\\QRCode": "src/"
+           "Nathanmac\\QRCode\\": "src/"
        }
    },
    "minimum-stability": "stable"
