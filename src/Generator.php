@@ -68,10 +68,14 @@ class Generator
     }
 
     /**
+     * Generate QR Code
+     *
      * @param string      $content
      * @param int         $size
      * @param string      $color
      * @param string|bool $background
+     *
+     * @codeCoverageIgnore
      *
      * @return Generator
      */
@@ -211,8 +215,6 @@ class Generator
      */
     public function create()
     {
-        header('Content-Type: image/png');
-
         return $this->getGenerator()
             ->setText($this->getContent())
             ->setSize($this->getSize())
