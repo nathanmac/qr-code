@@ -102,7 +102,7 @@ class Generator
      */
     public function setContent($content)
     {
-        $this->content = $content;
+        $this->content = str_replace('+', ' ', $content);;
     }
 
     /**

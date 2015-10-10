@@ -10,7 +10,8 @@
     ],
     "require": {
         "endroid/qrcode": "^1.5",
-        "illuminate/routing": "^5.1"
+        "illuminate/routing": "^5.0",
+        "illuminate/support": "^5.0"
     },
     "require-dev":{
         "mockery/mockery": "0.9.*",
