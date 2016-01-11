@@ -1,6 +1,6 @@
 <?php
 
-namespace Nathanmac\QRCode;
+namespace Nathanmac\Utilities\QRCode;
 
 use Illuminate\Support\ServiceProvider;
 

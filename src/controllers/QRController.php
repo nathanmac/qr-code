@@ -1,10 +1,10 @@
 <?php
 
-namespace Nathanmac\QRCode\Controllers;
+namespace Nathanmac\Utilities\QRCode\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Nathanmac\QRCode\Generator;
+use Nathanmac\Utilities\QRCode\Generator;
 
 class QRController extends Controller
 {
