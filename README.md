@@ -3,9 +3,8 @@ QR Code
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/nathanmac/qr-code.svg?style=flat-square)](https://packagist.org/packages/nathanmac/qr-code)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://travis-ci.org/nathanmac/qr-code.svg)](https://travis-ci.org/nathanmac/qr-code)
-
-
+[![Build Status](https://img.shields.io/travis/nathanmac/qr-code/master.svg?style=flat-square)](https://travis-ci.org/nathanmac/qr-code)
+[![Quality Score](https://img.shields.io/scrutinizer/g/nathanmac/qr-code.svg?style=flat-square)](https://scrutinizer-ci.com/g/nathanmac/qr-code)
 [![Total Downloads](https://img.shields.io/packagist/dt/nathanmac/qr-code.svg?style=flat-square)](https://packagist.org/packages/nathanmac/qr-code)
 
 Laravel package to providing a simple QR Code generator route
