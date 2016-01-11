@@ -12,7 +12,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase
     /** @test */
     public function it_should_use_the_defaults()
     {
-        $generator = new \Nathanmac\QRCode\Generator('QR Code Content');
+        $generator = new \Nathanmac\Utilities\QRCode\Generator('QR Code Content');
 
         $this->assertEquals(100, $generator->getSize());
         $this->assertEquals(array('r' => 0, 'g' => 0, 'b' => 0, 'a' => 0), $generator->getColor());
@@ -22,7 +22,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase
     /** @test */
     public function it_should_get_the_content()
     {
-        $generator = new \Nathanmac\QRCode\Generator('QR+Code+Content');
+        $generator = new \Nathanmac\Utilities\QRCode\Generator('QR+Code+Content');
 
         $this->assertEquals('QR Code Content', $generator->getContent());
     }
@@ -51,7 +51,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase
      */
     public function it_should_process_the_size($size, $expected)
     {
-        $generator = new \Nathanmac\QRCode\Generator('QR Code Content');
+        $generator = new \Nathanmac\Utilities\QRCode\Generator('QR Code Content');
 
         $generator->setSize($size);
         $this->assertEquals($expected, $generator->getSize());
@@ -83,7 +83,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase
      */
     public function it_should_process_the_color($color, $expected)
     {
-        $generator = new \Nathanmac\QRCode\Generator('QR Code Content');
+        $generator = new \Nathanmac\Utilities\QRCode\Generator('QR Code Content');
 
         $generator->setColor($color);
         $this->assertEquals($expected, $generator->getColor());
@@ -108,7 +108,7 @@ class GeneratorTest extends \PHPUnit_Framework_TestCase
         $qrcode->shouldReceive('setBackgroundColor')->once()->andReturn($qrcode);
         $qrcode->shouldReceive('render')->once();
 
-        $generator = m::mock('\Nathanmac\QRCode\Generator')
+        $generator = m::mock('\Nathanmac\Utilities\QRCode\Generator')
             ->makePartial()
             ->shouldAllowMockingProtectedMethods();
 
