@@ -45,9 +45,16 @@ Usage
 ```
 
 ```
-/qr-code/200?text=QR+Code+Content
-/qr-code/200/fff/000?text=QR+Code+Content
+/qrcode/100/ffff00/ff0000/?text=Hello+World
 ```
+
+![Example 1](examples/example-1.png?raw=true)
+
+```
+/qrcode/100/03a/?text=Hello+World
+```
+
+![Example 2](examples/example-2.png?raw=true)
 
 Testing
 -------
