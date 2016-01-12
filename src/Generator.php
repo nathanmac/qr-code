@@ -33,7 +33,7 @@ class Generator
     protected $content;
 
     /**
-     * @var size
+     * @var int
      */
     protected $size;
 
@@ -172,8 +172,8 @@ class Generator
     /**
      * Process the Color Value
      *
-     * @param string $color
-     * @param string $default
+     * @param string      $color
+     * @param bool|string $default
      *
      * @return array
      */
