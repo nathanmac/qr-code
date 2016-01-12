@@ -9,6 +9,8 @@ QR Code
 
 Laravel package to providing a simple QR Code generator route
 
+![Hello World Example QR Code](examples/hello-world.png?raw=true)
+
 Installation
 ------------
 
