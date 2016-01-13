@@ -126,7 +126,7 @@ class Generator
      */
     public function setSize($size)
     {
-        if (is_numeric($size) && $size > 0) $this->size = $size;
+        if (is_numeric($size) && $size > 0) $this->size =  (int) $size;
     }
 
     /**
@@ -172,8 +172,8 @@ class Generator
     /**
      * Process the Color Value
      *
-     * @param string      $color
-     * @param bool|string $default
+     * @param mixed $color
+     * @param mixed $default
      *
      * @return array
      */
