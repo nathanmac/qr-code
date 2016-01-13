@@ -16,7 +16,7 @@
     </testsuites>
     <filter>
         <whitelist>
-            <directory suffix=".php">src/</directory>
+            <file>src/Generator.php</file>
         </whitelist>
     </filter>
     <logging>
