@@ -38,22 +38,22 @@ class Generator
     protected $size;
 
     /**
-     * @var string
+     * @var array
      */
     protected $color;
 
     /**
-     * @var string|bool
+     * @var array
      */
     protected $backgroundColor;
 
     /**
      * Generator constructor.
      *
-     * @param string      $content
-     * @param int         $size
-     * @param string      $color
-     * @param string|bool $background
+     * @param string $content
+     * @param int    $size
+     * @param mixed  $color
+     * @param mixed  $background
      */
     public function __construct(
         $content,
@@ -70,10 +70,10 @@ class Generator
     /**
      * Generate QR Code
      *
-     * @param string      $content
-     * @param int         $size
-     * @param string      $color
-     * @param string|bool $background
+     * @param string $content
+     * @param int    $size
+     * @param mixed  $color
+     * @param mixed  $background
      *
      * @codeCoverageIgnore
      *
@@ -92,7 +92,7 @@ class Generator
     /**
      * Gets the content
      *
-     * @return mixed
+     * @return string
      */
     public function getContent()
     {
@@ -102,7 +102,7 @@ class Generator
     /**
      * Sets the content
      *
-     * @param mixed $content
+     * @param string $content
      */
     public function setContent($content)
     {
@@ -126,13 +126,13 @@ class Generator
      */
     public function setSize($size)
     {
-        if (is_numeric($size) && $size > 0) $this->size =  (int) $size;
+        if (is_numeric($size) && $size > 0) $this->size = (int) $size;
     }
 
     /**
      * Gets the color
      *
-     * @return string
+     * @return array
      */
     public function getColor()
     {
@@ -142,7 +142,7 @@ class Generator
     /**
      * Sets the color
      *
-     * @param string $color
+     * @param mixed $color
      */
     public function setColor($color)
     {
@@ -152,7 +152,7 @@ class Generator
     /**
      * Gets the background color
      *
-     * @return bool|string
+     * @return array
      */
     public function getBackgroundColor()
     {
@@ -162,7 +162,7 @@ class Generator
     /**
      * Sets the background color
      *
-     * @param bool|string $backgroundColor
+     * @param mixed $backgroundColor
      */
     public function setBackgroundColor($backgroundColor)
     {
